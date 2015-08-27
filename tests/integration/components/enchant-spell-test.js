@@ -2,7 +2,7 @@ import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
 moduleForComponent('enchant-spell', 'Integration | Component | enchant spell', {
-  integration: true
+  integration: true,
 });
 
 test('it renders', function(assert) {
@@ -13,7 +13,7 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{enchant-spell}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$().find('h1').text().trim(), '');
 
   // Template block usage:
   this.render(hbs`
@@ -22,5 +22,5 @@ test('it renders', function(assert) {
     {{/enchant-spell}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().find('#spell-pages').text().trim(), 'template block text');
 });

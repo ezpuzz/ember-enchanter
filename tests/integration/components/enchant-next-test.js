@@ -13,7 +13,7 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{enchant-next}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$().text().trim(), 'Next');
 
   // Template block usage:
   this.render(hbs`

@@ -13,7 +13,7 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{enchant-previous}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$().text().trim(), 'Previous');
 
   // Template block usage:
   this.render(hbs`
