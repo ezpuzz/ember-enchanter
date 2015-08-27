@@ -1,1 +1,7 @@
-{{yield}}
+<button disabled={{disabled}}>
+{{#if hasBlock}}
+  {{yield}}
+{{else}}
+  {{buttonText}}
+{{/if}}
+</button>

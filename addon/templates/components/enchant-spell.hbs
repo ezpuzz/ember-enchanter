@@ -1,6 +1,9 @@
-<h1 id="spell-title">{{title}}</h1>
 
+<h1 id="spell-title">{{title}}</h1>
 {{enchant-navigation}}
 
 {{yield}}
 
+{{! navigation buttons }}
+{{enchant-previous submit=(action 'goToPage' previousPage) page=currentPage}}
+{{enchant-next submit=(action 'goToPage' nextPage) page=currentPage}}

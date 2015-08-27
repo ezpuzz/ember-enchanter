@@ -2,7 +2,8 @@
 {{enchant-page title="First Page"}}
 {{/enchant-spell}}
 
-{{#enchant-spell title="Two Page Spell"}}
+{{#enchant-spell title="Two Page Spell" as |spellBind|}}
+{{spellBind.title}}
 {{enchant-page title="First Page"}}
 {{enchant-page title="Second Page"}}
 {{/enchant-spell}}
