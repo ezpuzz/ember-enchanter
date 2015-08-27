@@ -1,11 +1,5 @@
-{{#enchant-spell title="One Page Spell"}}
-{{enchant-page title="First Page"}}
-{{/enchant-spell}}
-
-{{#enchant-spell title="Two Page Spell" as |spellBind|}}
-{{spellBind.title}}
-{{enchant-page title="First Page"}}
-{{enchant-page title="Second Page"}}
-{{/enchant-spell}}
+<h1>Choose a Spell:</h1>
+{{#link-to 'first-wizard' 'first-page'}}One Page Wizard{{/link-to}}
+{{#link-to 'second-wizard' 'first-page'}}Two Page Wizard{{/link-to}}
 
 {{outlet}}
