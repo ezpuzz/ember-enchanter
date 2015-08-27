@@ -1,0 +1,36 @@
+{
+  "extends": ["airbnb"],
+  "globals": {
+    "_": false,
+    "select": false,
+    "visit": false,
+    "expect": false,
+    "start": false,
+    "stop": false,
+    "fillIn": false,
+    "triggerEvent": false,
+    "click": false,
+    "andThen": false
+  },
+  "rules": {
+    // from eslint-config-ember
+    "new-cap": [0,
+      {
+        "capIsNewExceptions": [
+          "Array",
+          "Boolean",
+          "Date",
+          "Error",
+          "Function",
+          "Number",
+          "Object",
+          "RegExp",
+          "String",
+          "Symbol",
+          "Ember",
+          "A"
+        ]
+      }
+    ]
+  }
+}

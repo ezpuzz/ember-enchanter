@@ -1,0 +1,14 @@
+
+{{#if title}}
+<h2>
+  {{title}}
+</h2>
+{{/if}}
+
+{{#if hasBlock}}
+  {{yield}}
+{{/if}}
+
+{{! navigation buttons }}
+{{enchant-previous}}
+{{enchant-next}}

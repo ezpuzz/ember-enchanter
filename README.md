@@ -16,7 +16,7 @@ ember-enchanter helps you to make step-by-step wizard based interfaces for long 
 Each completable user process is encapsulated by a Spell, which may contain multiple dependent steps (Pages).  ember-enchanter provides backwards and forwards navigation between Pages, validation of each Page, displays of user progress, and the ability to resume Spells (bookmarkable urls).  ember-enchanter tries to be as agnostic as possible about style and structure.
 
 ```handlebars
-{{enchant-spell}}
+{{#enchant-spell}}
 {{/enchant-spell}}
 ```
 
@@ -25,7 +25,7 @@ Each completable user process is encapsulated by a Spell, which may contain mult
 Each page contains a form that can be validated and provides feedback on that validation.
 
 ```handlebars
-{{enchant-page}}
+{{#enchant-page}}
 {{/enchant-page}}
 ```
 
