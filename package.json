@@ -1,7 +1,7 @@
 {
-  "name": "ember-wizard",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-enchanter",
+  "version": "0.0.1-alpha",
+  "description": "ember-enchanter helps you to make step-by-step wizard based interfaces for long and complex processes (Spells) that don't limit user action unfairly, give honest feedback throughout the process, and engage users on tedious tasks",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Emory Petermann",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
