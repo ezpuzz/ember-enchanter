@@ -1,4 +1,5 @@
 # ember-enchanter (simply magical interfaces)
+[![Build Status](https://travis-ci.org/ezpuzz/ember-enchanter.svg?branch=master)](https://travis-ci.org/ezpuzz/ember-enchanter)
 
 **WARNING: UNDER DEVELOPMENT, SUBJECT TO CHANGE**
 
