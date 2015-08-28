@@ -6,8 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('first-wizard', { path: '/first-wizard/:page_slug' });
-  this.route('second-wizard', { path: '/second-wizard/:page_slug' });
+  this.route('first-spell', { path: '/first-spell/:page' });
+  this.route('second-spell', { path: '/second-spell/:page' });
 });
 
 export default Router;

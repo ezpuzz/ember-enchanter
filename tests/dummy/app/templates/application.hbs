@@ -1,5 +1,16 @@
 <h1>Choose a Spell:</h1>
-{{#link-to 'first-wizard' 'first-page'}}One Page Wizard{{/link-to}}
-{{#link-to 'second-wizard' 'first-page'}}Two Page Wizard{{/link-to}}
 
-{{outlet}}
+<div id="spell-chooser">
+  <ul>
+    <li>
+      {{#link-to 'first-spell' 'first-page'}}One Page Spell{{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'second-spell' 'first-page'}}Two Page Spell{{/link-to}}
+    </li>
+  </ul>
+</div>
+
+<div id="spell-container">
+  {{outlet}}
+</div>

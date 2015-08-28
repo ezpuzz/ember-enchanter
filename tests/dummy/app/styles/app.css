@@ -1,0 +1,9 @@
+#spell-chooser {
+  float: left;
+  width: 50%;
+}
+
+#spell-container {
+  float: right;
+  width: 50%;
+}
