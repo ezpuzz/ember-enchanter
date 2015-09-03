@@ -3,10 +3,25 @@
 
 {{enchant-navigation}}
 
-<div id="spell-pages">
+{{#unless hasBlock}}
+  Current Page: {{currentPage}}
+{{else}}
   {{yield}}
+{{/unless}}
+
+<div id="spell-pages">
+  {{#each pages as |page index|}}
+    {{component page pages=pages pageIndex=index currentPage=currentPage}}
+  {{/each}}
 </div>
 
 {{! navigation buttons }}
-{{enchant-previous submit=(action 'goToPage' previousPage) page=currentPage}}
-{{enchant-next submit=(action 'goToPage' nextPage) page=currentPage}}
+{{#unless isFirstPage}}
+  {{enchant-previous submit=(action 'previousPage') page=currentPage}}
+{{/unless}}
+
+{{#unless isLastPage}}
+  {{enchant-next submit=(action 'nextPage') page=currentPage}}
+{{else}}
+  <button type="submit">Submit</button>
+{{/unless}}

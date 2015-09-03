@@ -1,11 +1,11 @@
+{{#if isVisible}}
+  {{#if title}}
+  <h2>
+    {{title}}
+  </h2>
+  {{/if}}
 
-{{#if title}}
-<h2>
-  {{title}}
-</h2>
+  {{#if hasBlock}}
+    {{yield}}
+  {{/if}}
 {{/if}}
-
-{{#if hasBlock}}
-  {{yield}}
-{{/if}}
-
